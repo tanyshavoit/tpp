@@ -46,9 +46,6 @@ namespace MathProCorporation.TaskManagerDatabase
             GetProjects().ForEach(c => context.Projects.Add(c));
         }
 
-        //TODO write tasks to employees
-        //TODO write projects and tasks end teams to manager ... etc
-
         // Clients ids start with 101
         private static List<Employee> GetEmployees()
         {
