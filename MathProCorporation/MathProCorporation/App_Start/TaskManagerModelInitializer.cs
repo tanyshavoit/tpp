@@ -54,28 +54,28 @@ namespace MathProCorporation.TaskManagerDatabase
                     EmployeeId = "1",
                     User = new ApplicationUser{
                         Id = "1",
-                        UserName = "Anastasiya",
-                        FirstName = "Anastasiya",
-                        LastName = "Bushkova",
+                        UserName = "yaroslava",
+                        FirstName = "Yaroslava",
+                        LastName = "Girilishena",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "bushkova@taskturbo.com",
+                        Email = "girilishena@math.com",
                         EmailConfirmed = true,
-                        Description = "starosta client"
+                        Description = "Main Client"
                     }
                 },
                 new Employee{
                     EmployeeId = "4",
                     User = new ApplicationUser{
                         Id = "4",
-                        UserName = "Olena",
-                        FirstName = "Olena",
-                        LastName = "Sokolova",
+                        UserName = "taras",
+                        FirstName = "Taras",
+                        LastName = "Lehinevych",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "superlenka@taskturbo.com",
+                        Email = "lehinevych@math.com",
                         EmailConfirmed = true,
                         Description = "Employee"
                     }
@@ -87,28 +87,28 @@ namespace MathProCorporation.TaskManagerDatabase
                     EmployeeId = "7",
                     User = new ApplicationUser{
                         Id = "7",
-                        UserName = "Alina",
-                        FirstName = "Alina",
-                        LastName = "Goca",
+                        UserName = "bogdan",
+                        FirstName = "Bogdan",
+                        LastName = "Kulynych",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "goca@taskturbo.com",
+                        Email = "kulynych@math.com",
                         EmailConfirmed = true,
-                        Description = "smart client"
+                        Description = "Client"
                     }
                 },
                 new Employee{
                     EmployeeId = "10",
                     User = new ApplicationUser{
                         Id = "10",
-                        UserName = "Ilya",
-                        FirstName = "Ilya",
-                        LastName = "Silenko",
+                        UserName = "illya",
+                        FirstName = "Illya",
+                        LastName = "Bakurov",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "silenko@taskturbo.com",
+                        Email = "bakurov@math.com",
                         EmailConfirmed = true,
                         Description = "Employee"
                     }
@@ -130,15 +130,15 @@ namespace MathProCorporation.TaskManagerDatabase
                     ManagerId = "2",
                     User = new ApplicationUser{
                         Id = "2",
-                        UserName = "Vladislav",
-                        FirstName = "Vladislav",
-                        LastName = "Valt",
+                        UserName = "yaroslav",
+                        FirstName = "Yaroslav",
+                        LastName = "Kaplunskij",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "vladislav.valt@taskturbo.com",
+                        Email = "kaplunskij@math.com",
                         EmailConfirmed = true,
-                        Description = "superprogramer manager"
+                        Description = "Super Msanager"
                     }
                 }
             };
@@ -152,13 +152,13 @@ namespace MathProCorporation.TaskManagerDatabase
                     ClientId = "3",
                     User = new ApplicationUser{
                         Id = "3",
-                        UserName = "Danilo",
-                        FirstName = "Danilo",
-                        LastName = "Fitel",
+                        UserName = "victoria",
+                        FirstName = "Victoria",
+                        LastName = "Konup",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "den@taskturbo.com",
+                        Email = "konup@math.com",
                         EmailConfirmed = true,
                         Description = "Client",
                     }
@@ -192,10 +192,10 @@ namespace MathProCorporation.TaskManagerDatabase
             {
                 new Task{
                     TaskId = "1",
-                    Name = "Be starosta!",
+                    Name = "Task1",
                     Description = "Bla bla",
                     Status = "OPENED",
-                    Deadline = new DateTime(2014, 05, 25),
+                    Deadline = new DateTime(2015, 03, 25),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
                     EmployeeId = "1"
@@ -203,19 +203,19 @@ namespace MathProCorporation.TaskManagerDatabase
                 new Task{
                     TaskId = "2",
                     Name = "Write some ASP.NET Controller!",
-                    Description = "Bla bla",
+                    Description = "Do it right NOW !!!",
                     Status = "CLOSED",
-                    Deadline = new DateTime(2014, 05, 25),
+                    Deadline = new DateTime(2015, 03, 29),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
                     EmployeeId = "1"
                 },
                 new Task{
                     TaskId = "3",
-                    Name = "Do practice number 4",
-                    Description = "Bla bla",
+                    Name = "Do practice 9 and 10",
+                    Description = "The last chance",
                     Status = "OPENED",
-                    Deadline = new DateTime(2014, 05, 25),
+                    Deadline = new DateTime(2015, 03, 31),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
                     EmployeeId = "4"
@@ -235,10 +235,10 @@ namespace MathProCorporation.TaskManagerDatabase
                     ManagerId = "2",
                     TeamId = "1",
                     Tasks = tasks,
-                    Name = "TaskTurboPlus",
+                    Name = "Prototype",
                     Status = "OPENED",
-                    Description = "Cool Stuff!",
-                    Deadline = new DateTime(2014, 05, 28),
+                    Description = "We are going to do cool project!",
+                    Deadline = new DateTime(2015, 03, 20),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
                 }
