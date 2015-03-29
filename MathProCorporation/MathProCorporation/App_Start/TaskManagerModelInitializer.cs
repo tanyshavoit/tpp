@@ -29,7 +29,7 @@ namespace MathProCorporation.TaskManagerDatabase
             base.Seed(context);
             Store = new UserStore<ApplicationUser>(context);
             UserManager = new UserManager<ApplicationUser>(Store);
-            String newPassword = "test@123";
+            String newPassword = "1111";
             String hashedNewPassword = UserManager.PasswordHasher.HashPassword(newPassword);
             Password = hashedNewPassword;
 
