@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public class BundleConfig
     {

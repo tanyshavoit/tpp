@@ -4,7 +4,7 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace TaskManager20000ProPlusUltra.TaskManagerDatabase
+namespace MathProCorporation.TaskManagerDatabase
 {
     using System;
     using System.Collections.Generic;

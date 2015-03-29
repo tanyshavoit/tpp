@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Service
+namespace MathProCorporation.Service
 {
     public class ClientService
     {

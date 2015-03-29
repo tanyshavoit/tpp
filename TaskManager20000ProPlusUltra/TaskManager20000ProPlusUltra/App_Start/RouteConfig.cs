@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public class RouteConfig
     {

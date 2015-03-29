@@ -3,7 +3,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Owin;
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public partial class Startup
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public class FilterConfig
     {

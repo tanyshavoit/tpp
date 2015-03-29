@@ -4,9 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using TaskManager20000ProPlusUltra.Models;
+using MathProCorporation.Models;
 
-namespace TaskManager20000ProPlusUltra.TaskManagerDatabase
+namespace MathProCorporation.TaskManagerDatabase
 {
     public class TaskManagerModelInitializer : DropCreateDatabaseAlways<CompanyContext>//DropCreateDatabaseIfModelChanges<CompanyContext>
     {

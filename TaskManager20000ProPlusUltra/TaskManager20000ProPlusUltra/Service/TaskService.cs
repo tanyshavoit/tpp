@@ -1,6 +1,6 @@
-﻿using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+﻿using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Service
+namespace MathProCorporation.Service
 {
     public class TaskService : Service<Task>
     {

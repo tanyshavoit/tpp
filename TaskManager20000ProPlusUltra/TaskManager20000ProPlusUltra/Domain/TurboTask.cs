@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-using TaskManager20000ProPlusUltra.Domain.StatusAvailable;
+using MathProCorporation.Domain.StatusAvailable;
 
-namespace TaskManager20000ProPlusUltra.Domain
+namespace MathProCorporation.Domain
 {
     public class TurboTask
     {

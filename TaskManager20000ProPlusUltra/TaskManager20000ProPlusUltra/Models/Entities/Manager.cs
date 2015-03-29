@@ -4,12 +4,12 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace TaskManager20000ProPlusUltra.TaskManagerDatabase
+namespace MathProCorporation.TaskManagerDatabase
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
-    using TaskManager20000ProPlusUltra.Models;
+    using MathProCorporation.Models;
 
     /// <summary>
     /// Represents project manager

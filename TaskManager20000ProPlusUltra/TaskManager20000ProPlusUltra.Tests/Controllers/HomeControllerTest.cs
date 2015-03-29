@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TaskManager20000ProPlusUltra;
-using TaskManager20000ProPlusUltra.Controllers;
+using MathProCorporation;
+using MathProCorporation.Controllers;
 
-namespace TaskManager20000ProPlusUltra.Tests.Controllers
+namespace MathProCorporation.Tests.Controllers
 {
     [TestClass]
     public class HomeControllerTest

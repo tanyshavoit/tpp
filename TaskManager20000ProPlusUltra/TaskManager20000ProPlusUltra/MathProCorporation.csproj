@@ -11,7 +11,7 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TaskManager20000ProPlusUltra</RootNamespace>
+    <RootNamespace>MathProCorporation</RootNamespace>
     <AssemblyName>TaskManager20000ProPlusUltra</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
@@ -213,9 +213,9 @@
     <Compile Include="Models\Entities\Team.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\aspnet-TaskManager20000ProPlusUltra-20140406125050.mdf" />
-    <Content Include="App_Data\aspnet-TaskManager20000ProPlusUltra-20140406125050_log.ldf">
-      <DependentUpon>aspnet-TaskManager20000ProPlusUltra-20140406125050.mdf</DependentUpon>
+    <Content Include="App_Data\aspnet-MathProCorporation.mdf" />
+    <Content Include="App_Data\aspnet-MathProCorporation_log.ldf">
+      <DependentUpon>aspnet-MathProCorporation.mdf</DependentUpon>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />

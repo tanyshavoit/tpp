@@ -4,11 +4,11 @@
 // </copyright>
 //-----------------------------------------------------------------------
 
-namespace TaskManager20000ProPlusUltra.TaskManagerDatabase
+namespace MathProCorporation.TaskManagerDatabase
 {
     using Microsoft.AspNet.Identity.EntityFramework;
     using System.Data.Entity;
-    using TaskManager20000ProPlusUltra.Models;
+    using MathProCorporation.Models;
 
     /// <summary>
     /// The management company context

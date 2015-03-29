@@ -1,9 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(TaskManager20000ProPlusUltra.Startup))]
+[assembly: OwinStartupAttribute(typeof(MathProCorporation.Startup))]
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public partial class Startup
     {

@@ -7,9 +7,9 @@ using System.Web.Optimization;
 using System.Web.Routing;
 
 using System.Data.Entity;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra
+namespace MathProCorporation
 {
     public class MvcApplication : System.Web.HttpApplication
     {

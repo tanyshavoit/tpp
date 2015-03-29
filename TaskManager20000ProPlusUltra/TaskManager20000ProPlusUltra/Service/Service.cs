@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Service
+namespace MathProCorporation.Service
 {
     public class Service<TEntity> where TEntity : class
     {

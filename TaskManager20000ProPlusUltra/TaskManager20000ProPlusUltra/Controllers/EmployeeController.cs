@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Mvc;
-using TaskManager20000ProPlusUltra.Models;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.Models;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Controllers
+namespace MathProCorporation.Controllers
 {
     [Authorize(Roles = "Employee")]
     public class EmployeeController : Controller

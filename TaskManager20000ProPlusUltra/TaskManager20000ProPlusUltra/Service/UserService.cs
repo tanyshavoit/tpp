@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using TaskManager20000ProPlusUltra.Models;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.Models;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Service
+namespace MathProCorporation.Service
 {
     public class UserService : Service<ApplicationUser>
     {

@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace TaskManager20000ProPlusUltra.Controllers
+namespace MathProCorporation.Controllers
 {
     public class HomeController : Controller
     {

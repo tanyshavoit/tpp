@@ -4,10 +4,10 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
-using TaskManager20000ProPlusUltra.Service;
-using TaskManager20000ProPlusUltra.TaskManagerDatabase;
+using MathProCorporation.Service;
+using MathProCorporation.TaskManagerDatabase;
 
-namespace TaskManager20000ProPlusUltra.Controllers
+namespace MathProCorporation.Controllers
 {
     //TODO Uncomment it later
     //[Authorize(Roles = "Manager")]
