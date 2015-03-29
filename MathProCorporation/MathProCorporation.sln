@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProCorporation", "TaskManager20000ProPlusUltra\MathProCorporation.csproj", "{CD6CD98B-3AF1-44DB-99A6-8DEE436A64BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProCorporation", "MathProCorporation\MathProCorporation.csproj", "{CD6CD98B-3AF1-44DB-99A6-8DEE436A64BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProCorporation.Tests", "TaskManager20000ProPlusUltra.Tests\MathProCorporation.Tests.csproj", "{2A32B736-20DE-4D3D-B629-40D19E6C7692}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathProCorporation.Tests", "MathProCorporation.Tests\MathProCorporation.Tests.csproj", "{2A32B736-20DE-4D3D-B629-40D19E6C7692}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

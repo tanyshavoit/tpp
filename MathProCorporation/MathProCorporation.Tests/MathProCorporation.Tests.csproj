@@ -93,7 +93,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskManager20000ProPlusUltra\MathProCorporation.csproj">
+    <ProjectReference Include="..\MathProCorporation\MathProCorporation.csproj">
       <Project>{CD6CD98B-3AF1-44DB-99A6-8DEE436A64BF}</Project>
       <Name>MathProCorporation</Name>
     </ProjectReference>
