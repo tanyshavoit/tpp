@@ -1,4 +1,4 @@
-TaskManager20000ProPlusUltra
+MathProCorporation
 ============================
 
-C# TPP great project
+Project for TPP
