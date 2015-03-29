@@ -22,6 +22,8 @@ namespace MathProCorporation.TaskManagerDatabase
 
         public static List<Employee> anotherEmployees = null;
 
+        public static List<Employee> otherEmployees = null;
+
         public static List<Task> tasks = null;
 
         protected override void Seed(CompanyContext context)
@@ -29,7 +31,7 @@ namespace MathProCorporation.TaskManagerDatabase
             base.Seed(context);
             Store = new UserStore<ApplicationUser>(context);
             UserManager = new UserManager<ApplicationUser>(Store);
-            String newPassword = "1111";
+            String newPassword = "test@123";
             String hashedNewPassword = UserManager.PasswordHasher.HashPassword(newPassword);
             Password = hashedNewPassword;
 
@@ -47,70 +49,151 @@ namespace MathProCorporation.TaskManagerDatabase
         //TODO write tasks to employees
         //TODO write projects and tasks end teams to manager ... etc
 
+        // Clients ids start with 101
         private static List<Employee> GetEmployees()
         {
             employees = new List<Employee>{
                 new Employee{
-                    EmployeeId = "1",
+                    EmployeeId = "101",
                     User = new ApplicationUser{
-                        Id = "1",
-                        UserName = "yaroslava",
-                        FirstName = "Yaroslava",
-                        LastName = "Girilishena",
+                        Id = "101",
+                        UserName = "Dan",
+                        FirstName = "Dan",
+                        LastName = "Belei",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "girilishena@math.com",
+                        Email = "belei@mathpro.com",
                         EmailConfirmed = true,
-                        Description = "Main Client"
+                        Description = "SQL Guru"
                     }
                 },
                 new Employee{
-                    EmployeeId = "4",
+                    EmployeeId = "102",
                     User = new ApplicationUser{
-                        Id = "4",
-                        UserName = "taras",
-                        FirstName = "Taras",
-                        LastName = "Lehinevych",
+                        Id = "102",
+                        UserName = "Valeriya",
+                        FirstName = "Valeriya",
+                        LastName = "Avramenko",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "lehinevych@math.com",
+                        Email = "avramenko@mathpro.com",
                         EmailConfirmed = true,
-                        Description = "Employee"
+                        Description = "Senior Java developer"
+                    }
+                },
+                new Employee{
+                    EmployeeId = "103",
+                    User = new ApplicationUser{
+                        Id = "103",
+                        UserName = "Illya",
+                        FirstName = "Illya",
+                        LastName = "Bakurov",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "+380631234567",
+                        Email = "bakurov@mathpro.com",
+                        EmailConfirmed = true,
+                        Description = "Senior iOS developer"
                     }
                 }
             };
 
             anotherEmployees = new List<Employee>{
                 new Employee{
-                    EmployeeId = "7",
+                    EmployeeId = "104",
                     User = new ApplicationUser{
-                        Id = "7",
-                        UserName = "bogdan",
-                        FirstName = "Bogdan",
-                        LastName = "Kulynych",
+                        Id = "104",
+                        UserName = "Yaroslava",
+                        FirstName = "Yaroslava",
+                        LastName = "Girilishena",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "kulynych@math.com",
+                        Email = "girilishena@mathpro.com",
                         EmailConfirmed = true,
-                        Description = "Client"
+                        Description = "Junior iOS developer"
                     }
                 },
+
                 new Employee{
-                    EmployeeId = "10",
+                    EmployeeId = "105",
                     User = new ApplicationUser{
-                        Id = "10",
-                        UserName = "illya",
-                        FirstName = "Illya",
-                        LastName = "Bakurov",
+                        Id = "105",
+                        UserName = "Yaroslav",
+                        FirstName = "Yaroslav",
+                        LastName = "Kaplunskiy",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "bakurov@math.com",
+                        Email = "kaplunskiy@mathpro.com",
                         EmailConfirmed = true,
-                        Description = "Employee"
+                        Description = "Senior Java developer"
+                    }
+                },
+
+                new Employee{
+                    EmployeeId = "106",
+                    User = new ApplicationUser{
+                        Id = "106",
+                        UserName = "Taras",
+                        FirstName = "Taras",
+                        LastName = "Lehynevich",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "+380631234567",
+                        Email = "lehynevich@mathpro.com",
+                        EmailConfirmed = true,
+                        Description = "Senior developer"
+                    }
+                },
+
+                new Employee{
+                    EmployeeId = "107",
+                    User = new ApplicationUser{
+                        Id = "107",
+                        UserName = "Bogdan",
+                        FirstName = "Bogdan",
+                        LastName = "Kylinich",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "+380631234567",
+                        Email = "kylinich@mathpro.com",
+                        EmailConfirmed = true,
+                        Description = "Senior Python developer"
+                    }
+                },
+
+                new Employee{
+                    EmployeeId = "108",
+                    User = new ApplicationUser{
+                        Id = "108",
+                        UserName = "Tatiana",
+                        FirstName = "Tatiana",
+                        LastName = "Voytovich",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "+380631234567",
+                        Email = "voytovich@mathpro.com",
+                        EmailConfirmed = true,
+                        Description = "Top Tester"
+                    }
+                },
+
+                new Employee{
+                    EmployeeId = "109",
+                    User = new ApplicationUser{
+                        Id = "109",
+                        UserName = "Victoria",
+                        FirstName = "Victoria",
+                        LastName = "Konup",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "+380631234567",
+                        Email = "konup@mathpro.com",
+                        EmailConfirmed = true,
+                        Description = "Web Designer"
                     }
                 }
             };
@@ -130,41 +213,86 @@ namespace MathProCorporation.TaskManagerDatabase
                     ManagerId = "2",
                     User = new ApplicationUser{
                         Id = "2",
-                        UserName = "yaroslav",
-                        FirstName = "Yaroslav",
-                        LastName = "Kaplunskij",
+                        UserName = "Anton",
+                        FirstName = "Anton",
+                        LastName = "Morozov",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
                         PhoneNumber = "+380631234567",
-                        Email = "kaplunskij@math.com",
+                        Email = "morozov@mathpro.com",
                         EmailConfirmed = true,
-                        Description = "Super Msanager"
+                        Description = "Top Manager"
                     }
                 }
             };
             return managers;
         }
 
+        // Clients ids start with 1001
         private static List<Client> GetClients()
         {
             var clients = new List<Client>{
-                new Client{
-                    ClientId = "3",
+                 new Client{
+                    ClientId = "1001",
                     User = new ApplicationUser{
-                        Id = "3",
-                        UserName = "victoria",
-                        FirstName = "Victoria",
-                        LastName = "Konup",
+                        Id = "1001",
+                        UserName = "Roman",
+                        FirstName = "Roman",
+                        LastName = "Minenko",
                         PasswordHash = Password,
                         SecurityStamp = "41fererg",
-                        PhoneNumber = "+380631234567",
-                        Email = "konup@math.com",
+                        PhoneNumber = "0631234567",
+                        Email = "minenko@gmail.com",
                         EmailConfirmed = true,
-                        Description = "Client",
+                        Description = "Client"
+                    }
+                },
+                new Client{
+                    ClientId = "1002",
+                    User = new ApplicationUser{
+                        Id = "1002",
+                        UserName = "Anna",
+                        FirstName = "Anna",
+                        LastName = "Kolyuka",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "0631234567",
+                        Email = "kolyuka@gmail.com",
+                        EmailConfirmed = true,
+                        Description = "Client"
+                    }
+                },
+                new Client{
+                    ClientId = "1003",
+                    User = new ApplicationUser{
+                        Id = "1003",
+                        UserName = "Yuriy",
+                        FirstName = "Yuriy",
+                        LastName = "Mytnyk",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "0631234567",
+                        Email = "mytnyk@gmail.com",
+                        EmailConfirmed = true,
+                        Description = "Client"
+                    }
+                },
+                new Client{
+                    ClientId = "1004",
+                    User = new ApplicationUser{
+                        Id = "1004",
+                        UserName = "Ruslan",
+                        FirstName = "Ruslan",
+                        LastName = "Chornei",
+                        PasswordHash = Password,
+                        SecurityStamp = "41fererg",
+                        PhoneNumber = "0631234567",
+                        Email = "chorneirk@gmail.com",
+                        EmailConfirmed = true,
+                        Description = "Client"
                     }
                 }
             };
-
             return clients;
         }
 
@@ -192,55 +320,80 @@ namespace MathProCorporation.TaskManagerDatabase
             {
                 new Task{
                     TaskId = "1",
-                    Name = "Task1",
-                    Description = "Bla bla",
+                    Name = "t100001",
+                    Description = "Task description goes here",
+                    Status = "OPENED",
+                    Deadline = new DateTime(2014, 05, 25),
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.MaxValue,
+                    EmployeeId = "101"
+                },
+                new Task{
+                    TaskId = "2",
+                    Name = "t100002",
+                    Description = "Task description goes here",
+                    Status = "CLOSED",
+                    Deadline = new DateTime(2014, 05, 25),
+                    StartDate = DateTime.Now,
+                    EndDate = DateTime.MaxValue,
+                    EmployeeId = "106"
+                },
+                new Task{
+                    TaskId = "3",
+                    Name = "t100004",
+                    Description = "Task description goes here",
                     Status = "OPENED",
                     Deadline = new DateTime(2015, 03, 25),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
-                    EmployeeId = "1"
-                },
-                new Task{
-                    TaskId = "2",
-                    Name = "Write some ASP.NET Controller!",
-                    Description = "Do it right NOW !!!",
-                    Status = "CLOSED",
-                    Deadline = new DateTime(2015, 03, 29),
-                    StartDate = DateTime.Now,
-                    EndDate = DateTime.MaxValue,
-                    EmployeeId = "1"
-                },
-                new Task{
-                    TaskId = "3",
-                    Name = "Do practice 9 and 10",
-                    Description = "The last chance",
-                    Status = "OPENED",
-                    Deadline = new DateTime(2015, 03, 31),
-                    StartDate = DateTime.Now,
-                    EndDate = DateTime.MaxValue,
-                    EmployeeId = "4"
+                    EmployeeId = "104"
                 },
             };
             return tasks;
         }
 
-        // TODO set project
         private static List<Project> GetProjects()
         {
             var projects = new List<Project>
             {
                 new Project{
                     ProjectId = "1",
-                    ClientId = "3",
+                    ClientId = "1003",
                     ManagerId = "2",
                     TeamId = "1",
                     Tasks = tasks,
-                    Name = "Prototype",
+                    Name = "Trip Advisor",
                     Status = "OPENED",
-                    Description = "We are going to do cool project!",
-                    Deadline = new DateTime(2015, 03, 20),
+                    Description = "Reccomendations and ratings for all kinds of resorts",
+                    Deadline = new DateTime(2015, 04, 25),
                     StartDate = DateTime.Now,
-                    EndDate = DateTime.MaxValue,
+                    EndDate = new DateTime(2015, 06, 25),
+                },
+                new Project{
+                    ProjectId = "2",
+                    ClientId = "1001",
+                    ManagerId = "2",
+                    TeamId = "2",
+                    Tasks = null,
+                    Name = "Barcode scanner",
+                    Status = "OPENED",
+                    Description = "Mobile application - scan and search products",
+                    Deadline = new DateTime(2015, 04, 12),
+                    StartDate = new DateTime(2015, 03, 28),
+                    EndDate = new DateTime(2015, 04, 12),
+                },
+                new Project{
+                    ProjectId = "3",
+                    ClientId = "1002",
+                    ManagerId = "2",
+                    TeamId = "2",
+                    Tasks = null,
+                    Name = "Privat24/7",
+                    Status = "OPENED",
+                    Description = "Mobile bank accounts manager",
+                    Deadline = new DateTime(2015, 08, 10),
+                    StartDate = new DateTime(2015, 02, 28),
+                    EndDate = new DateTime(2015, 08, 10),
                 }
             };
             return projects;
