@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<MathProCorporation.TaskManagerDatabase.Task>
 
 @{
-    ViewBag.Title = "ProjectTasks";
+    ViewBag.Title = "Project Tasks";
 }
 
 <h2>ProjectTasks</h2>
@@ -61,7 +61,7 @@
         <td>
             @if (item.Status == "OPENED")
             {
-                <a href="/Manager/CloseProjectTask?taskId=@item.TaskId">Close Project</a>
+                @Html.ActionLink("Close Task", "CloseProjectTask", new { taskId = item.TaskId, projectId = @ViewBag.ProjectId })
             }
         </td>
     </tr>

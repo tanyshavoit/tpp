@@ -10,7 +10,8 @@ using MathProCorporation.TaskManagerDatabase;
 namespace MathProCorporation.Controllers
 {
     //TODO Uncomment it later
-    //[Authorize(Roles = "Manager")]
+    [Authorize(Roles = "Manager")]
+    [ValidateInput(false)]
     public class ManagerController : Controller
     {
         private CompanyContext context = new CompanyContext();
@@ -80,7 +81,6 @@ namespace MathProCorporation.Controllers
             return View(currProj);
         }
 
-        //
         // GET: /Manager/ProjectTasks
         public ActionResult ProjectTasks([Bind(Include = "projectId")] string projectId)
         {
@@ -112,18 +112,16 @@ namespace MathProCorporation.Controllers
         public ActionResult CreateTask([Bind(Include = "TaskId,Name,Description,Status,Deadline,StartDate,EndDate,EmployeeId")] Task task,
             [Bind(Include = "projectId")] string projectId)
         {
+            var project = context.Projects.Find(projectId);
+
             if (ModelState.IsValid)
             {
-                var project = context.Projects.Find(projectId);
                 project.Tasks.Add(task);
                 context.SaveChanges();
-                return RedirectToAction("Index");
             }
-
-            return View(task);
+            return RedirectToAction("ProjectTasks", new { projectId = projectId });
         }
 
-        //
         // GET: /Manager/Teams
         public ActionResult Teams()
         {
@@ -215,9 +213,7 @@ namespace MathProCorporation.Controllers
             }
         }
 
-        // delete team
 
-        //
         // GET: /Manager/CreateProject
         public ActionResult CreateProject()
         {
@@ -280,18 +276,17 @@ namespace MathProCorporation.Controllers
             return RedirectToAction("Projects");
         }
 
-        public ActionResult CloseProjectTask([Bind(Include = "taskId")] string taskId)
+        public ActionResult CloseProjectTask([Bind(Include = "taskId")] string taskId, [Bind(Include = "projectId")] string projectId)
         {
-            var projectId = "1";
             if (ModelState.IsValid)
             {
                 var task = context.Tasks.Find(taskId);
-                task.Status = "Closed";
+                task.Status = "COMPLETED";
                 task.EndDate = DateTime.Now;
                 context.Entry(task).State = EntityState.Modified;
                 context.SaveChanges();
             }
-            return RedirectToAction("ProjectTasks?projectId=" + projectId);
+            return RedirectToAction("ProjectTasks", new {projectId = projectId});
         }
     }
 }
