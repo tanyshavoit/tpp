@@ -203,11 +203,14 @@ namespace MathProCorporation.Controllers
             try
             {
                 team.Employees = null;
+                team.Manager = null;
+                team.ManagerId = null;
+                team.Projects = null;
                 context.Entry(team).State = EntityState.Modified;
                 context.SaveChanges();
                 context.Teams.Remove(team);
                 context.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Teams");
             }
             catch (Exception)
             {
