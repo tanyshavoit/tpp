@@ -46,7 +46,7 @@ namespace MathProCorporation.Controllers
             {
                 db.Tasks.Add(task);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Tasks");
             }
 
             return View(task);

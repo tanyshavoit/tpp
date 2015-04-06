@@ -1,19 +1,11 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="Employee.cs" company="Primat NaUKMA">
-//     Primat NaUKMA Inc.
-// </copyright>
-//-----------------------------------------------------------------------
-
-namespace MathProCorporation.TaskManagerDatabase
+﻿namespace MathProCorporation.TaskManagerDatabase
 {
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using MathProCorporation.Models;
 
-    /// <summary>
-    /// Represents a company's employee
-    /// </summary>
+    // Represents a company's employee
     public class Employee
     {
         [Key]
@@ -22,9 +14,7 @@ namespace MathProCorporation.TaskManagerDatabase
         [ForeignKey("EmployeeId")]
         public ApplicationUser User { get; set; }
 
-        /// <summary>
-        /// Gets or sets the list of current tasks
-        /// </summary>
+        // Gets or sets the list of current tasks
         public virtual List<Task> Tasks { get; set; }
     }
 }

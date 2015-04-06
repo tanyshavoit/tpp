@@ -333,7 +333,7 @@ namespace MathProCorporation.TaskManagerDatabase
                     Deadline = new DateTime(2014, 05, 25),
                     StartDate = DateTime.Now,
                     EndDate = DateTime.MaxValue,
-                    EmployeeId = "106"
+                    EmployeeId = "103"
                 },
                 new Task{
                     TaskId = "3",
